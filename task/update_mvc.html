@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap.css"/>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</head>
+<body>
+<div id="mod" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content" >
+<div class="modal-haeder">
+ <button type="button" class="close"  data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+    <div >
+            <form action="update_mvc.php" method="post">
+                 <input type="hidden" name="hidden"value="<?php echo $idPost;?>"/>
+                  <input type="text" name="textUpdate" value="<?php echo $x ?>"/>
+                  <button name="clickUpdate" value="update ok">update ok</button>
+
+             </form>
+                
+     </div>
+
+
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
